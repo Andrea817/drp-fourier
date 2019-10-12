@@ -5,6 +5,16 @@
 \author{Adithya Ganesh}
 \begin{document}
 \maketitle
+
+\section{Crash course on probability formalism}
+A probability space is a triple $(\Omega, \mathcal F, P)$ where 
+\begin{itemize}
+\item $\Omega$ is a set (elements are called "events"), 
+\item $\mathcal F\subset 2^{\Omega}$ is the collection of "measurable sets", which contain the whole set (i.e., "something happens" is an event we can measure) and it is closed under complements and countable unions. 
+\item $P:\mathcal F\rightarrow [0,1]$ is a probability measure, i.e., $P(\Omega)=1, P(\cap A_i)=\sum A_i$ for every countable union of disjoint events. 
+\end{itemize}
+
+
 \section{Introduction to Finite Markov Chains}
 
 A finite Markov chain is a process which moves among the elements of a finite set $\Omega$ in the following manner: when at $x \in \Omega$, the next position is chosen according to a fixed probability distribution $P(x, \cdot)$.
